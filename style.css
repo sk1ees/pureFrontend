@@ -178,10 +178,27 @@ footer {
   gap: 1vw;
   font-size: 1.5rem;
 }
-/* .icon:hover {
-  transform:  translateX(1000%) translateY(1000%);
-  transition: 300ms all ease;
-} */
+.icon {
+  z-index: 999;
+}
+.titleMove {
+  animation: titleMove 4s ease forwards;
+}
+
+@keyframes titleMove {
+  0% {
+  }
+  50% {
+    transform: translateX(100vh) translateY(50vh) scale(1);
+  }
+
+  80% {
+    transform: translateX(100vh) translateY(50vh) scale(2);
+  }
+  100% {
+    transform: translateX(100vh) translateY(50vh) scale(0);
+  }
+}
 
 .footerV1 {
   display: flex;
