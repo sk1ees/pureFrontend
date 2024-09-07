@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* FONT-CSS-CLASSES */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* FONT-CSS-CLASSES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* custom-classes */
+
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.leftMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.fadeDown {
+  transform: translateY(100%);
+  opacity: 0%;
+  transition: transform 2s ease, opacity 0.5s ease;
+}
+.fadeLeft {
+  transform: translateX(-100%);
+  opacity: 0%;
+  transition: transform 2s ease, opacity 0.5s ease;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 1vw 0vw;
+  gap: 0.3vw;
+}
+
+.navLeft {
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(1, 100px 1fr);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0vw 3vw;
+}
+.navLeftV1 {
+  display: flex;
+  gap: 1vw;
+  font-size: 1.5rem;
+}
+/* .icon:hover {
+  transform:  translateX(1000%) translateY(1000%);
+  transition: 300ms all ease;
+} */
+
+.footerV1 {
+  display: flex;
+  gap: 3vw;
+}
+.footerV2 {
+  display: flex;
+  gap: 3vw;
+}
+.navLeftV2 {
+  display: flex;
+  gap: 2vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navLeftV2 small {
+  color: gray;
+  font-size: 0.9rem;
+}
+.navLeftV2 button {
+  padding: 10px 25px;
+  border-radius: 3vw;
+  outline: none;
+  border: 1px solid green;
+  color: green;
+  font-size: medium;
+  background-color: white;
+  cursor: pointer;
+}
+.formLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgDiv {
+  border-radius: 10px;
+  width: 95%;
+  height: 95%;
+  background: url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg");
+  background-size: cover;
+  transition: 300ms all ease;
+}
+
+.scale {
+  transform: scale(0);
+  transition: transform 1s ease;
+}
+
+.formBox {
+  width: 90%;
+  height: 90%;
+
+  padding: 20px;
+}
+
+.formHeading {
+  color: black;
+  text-align: center;
+}
+.formBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 1vw;
+}
+/* From Uiverse.io by tranquoclong */
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  width: 70%;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 2em 1em 1em 1em;
+  outline: none;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 1.5em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+  font-weight: 600;
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-10%) scale(0.8);
+  margin: 0em;
+
+  padding: 0.5em;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+/* checkbox */
+
+/* From Uiverse.io by aboalsim114 */
+/* Hide the default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  box-shadow: rgb(191, 191, 191) 0px 0px 0px 2px;
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-top: -1px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  transform-origin: 0px 10px;
+  border-radius: 4px;
+  margin: -1px 10px 0px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container input:checked ~ .checkmark {
+  box-shadow: rgba(0, 141, 38, 0.5) 0px 0px 0px 2px;
+  background-color: green;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-top: -1px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  transform-origin: 0px 10px;
+  border-radius: 4px;
+  margin: -1px 10px 0px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.leftFadeIN {
+  transform: translateY(100%);
+  opacity: 0%;
+  transition: transform 2s ease, opacity 0.5s ease;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+  transition: all 500ms ease-in-out;
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.checkBox label {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  width: 70%;
+}
+
+.btn button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: green;
+  padding: 1vw 2vw;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.forgotSection {
+  display: flex;
+  gap: 1vw;
+}
+.forgotSection small {
+  color: green;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@keyframes fadeIN {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
