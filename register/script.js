@@ -13,13 +13,6 @@ async function scaleImage() {
   imgDiv.classList.toggle("scale");
   icon.classList.toggle("titleMove");
 
-  icon.addEventListener(
-    "animationend",
-    () => {
-      window.location.href = "login.html"; // Redirect to login page after the animation
-    },
-    { once: true }
-  ); // Ensure the event only triggers once
 }
 
 function fadeElement() {
