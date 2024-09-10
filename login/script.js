@@ -5,9 +5,9 @@ const title = document.querySelector(".title");
 const footer = document.querySelector(".footer");
 const icon = document.querySelector(".icon");
 
-async function scaleImage() {
+async function bigImage() {
   await triggerAllAnimations();
-  window.location.href = "/login/index.html"; // Redirect after all animations finish
+  window.location.href = "/register/index.html"; // Redirect after all animations finish
 }
 
 function triggerAllAnimations() {
@@ -21,19 +21,30 @@ function triggerAllAnimations() {
     formLeft.classList.toggle("leftFadeIN");
 
     // Ensure transitions are applied to these elements in CSS
-    const transitionElements = [navLeftV2Items, title, footer, imgDiv, icon, formLeft];
-    
+    const transitionElements = [
+      navLeftV2Items,
+      title,
+      footer,
+      imgDiv,
+      icon,
+      formLeft,
+    ];
+
     let remaining = transitionElements.length;
-    
+
     // Handle when all transitionend events are fired
     transitionElements.forEach((element) => {
       // Add event listener for 'transitionend' on each element
-      element.addEventListener("transitionend", () => {
-        remaining -= 1;
-        if (remaining === 0) {
-          resolve(); // Resolve when all animations are complete
-        }
-      }, { once: true });
+      element.addEventListener(
+        "transitionend",
+        () => {
+          remaining -= 1;
+          if (remaining === 0) {
+            resolve(); // Resolve when all animations are complete
+          }
+        },
+        { once: true }
+      );
     });
 
     // Fallback: In case no transition happens or the event doesn't fire
